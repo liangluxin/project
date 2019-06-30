@@ -15,4 +15,9 @@ public interface UserDao {
      * @param user
      */
     public void save(User user);
+
+    public User findByCode(String code);
+    void updateStatus(User user);
+
+    User findByUsernameAndPassword(String username, String password);
 }
